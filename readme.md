@@ -33,7 +33,7 @@ plugin {
 Configuration:
 
 ```groovy
-setupMixinsFile {
+setupPackMcmeta {
   packFormat = 15                // number - required !
 
   // Optional fields: 
