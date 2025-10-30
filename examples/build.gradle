@@ -1,12 +1,19 @@
 plugins {
   id 'fabric-loom' version '0.12-SNAPSHOT'
-
+  id 'gradle-gen-packmcmeta-file' version '1.0.0'
 }
 
 version = "1.0.0"
 group = "com.example"
 
 repositories {
+}
+
+setupPackMcmeta {
+  packFormat = 15                // number - required !
+  // Optional fields:
+  description = "My Awesome Mod" // String — optional, overrides default description
+  modId = "example"              // String — optional, only used if 'description' is not set
 }
 
 dependencies {
